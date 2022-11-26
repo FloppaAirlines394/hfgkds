@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - name: Download
-      run: git clone https://github.com/FloppaAirlines3945/golang-httpflood.git
+      run: git clone https://github.com/FloppaAirlines394/golang-httpflood.git
     - name: Extract
       run: sudo apt install golang
     - name: Auth
